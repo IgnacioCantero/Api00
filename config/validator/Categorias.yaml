@@ -1,0 +1,10 @@
+App\Entity\Categorias:
+  properties:
+    categoria:
+      - NotBlank:
+          message: 'El campo Categoria es obligatorio'
+      - Length:
+          min: 2
+          max: 100
+          minMessage: 'Al menos, 2 caracteres'
+          maxMessage: 'Máximo 100 caracteres'

@@ -18,6 +18,7 @@ class CategoriaController extends AbstractController
         $this->catRepository = $catRepository;
     }
 
+    //http://127.0.0.1:8000/categoria?categoria=
     /**
      * @Route("/categoria", name="create_categoria")
      * @param EntityManagerInterface $entityManager
@@ -54,6 +55,7 @@ class CategoriaController extends AbstractController
         return $response;
     }
 
+    //http://127.0.0.1:8000/categoria/list
     /**
      * @Route("/categoria/list", name="categoria_list")
      * @return JsonResponse
